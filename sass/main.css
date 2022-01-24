@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+  color: #000;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1f3756;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.5em;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+  color: black;
+}
+
+.step-1 {
+  text-align: -webkit-center;
+}
+
+.box-wrapper {
+  padding-top: 3vh;
+}
+
+.box-wrapper .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vh 5vw;
+  border: 1px solid #606e85;
+  border-radius: 6px;
+  width: 45%;
+}
+
+.box-wrapper .box span {
+  color: #2a46c0;
+}
+
+.box-wrapper .box img {
+  width: 15%;
+}
+
+.box-wrapper .box h5 {
+  border: 1px solid #f5f4f4;
+  background-color: #f5f4f4;
+}
+
+.RPS .wrap {
+  margin-top: 3%;
+  background-image: url(/img/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 258px;
+}
+
+.RPS .wrap img {
+  border: 8px solid;
+  background-color: honeydew;
+  border-radius: 360px;
+}
+
+.RPS .wrap .paper {
+  width: 8%;
+  margin: -5px 12% 10px 0px;
+  padding: 2vh;
+  border-color: #4865f4;
+}
+
+.RPS .wrap .scissors {
+  width: 8%;
+  margin-bottom: 7px;
+  padding: 2vh;
+  border-color: #ec9e0e;
+}
+
+#pre-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #3498;
+  text-align: center;
+}
+
+#pre-loader #loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px dotted white;
+  -webkit-animation: spin 2s linear infinite;
+  /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 2s linear infinite;
+  /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+}
+
+#modal-container {
+  width: 100%;
+  height: 100%;
+}
+
+#modal-container .modal {
+  padding: 5.5vh 1.5vw;
+  background-color: whitesmoke;
+  position: fixed;
+  left: 30%;
+  top: 18%;
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  width: 40%;
+  height: 70%;
+  text-align: center;
+}
+
+#modal-container .modal h5 {
+  float: left;
+}
+
+#modal-container .modal button {
+  position: relative;
+  font-size: 18px;
+  width: 8vw;
+  height: 6vh;
+  background-color: #b6b5b5;
+  float: right;
+}
+/*# sourceMappingURL=main.css.map */

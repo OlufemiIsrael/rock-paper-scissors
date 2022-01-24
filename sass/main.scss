@@ -1,0 +1,117 @@
+@import "global";
+@import "variables";
+@import "mixins";
+
+.step-1 {
+  text-align: -webkit-center;
+}
+.box-wrapper {
+  padding-top: 3vh;
+  .box {
+    @include flex;
+    padding: 2vh 5vw;
+    border: 1px solid $headerOutlineColor;
+    border-radius: 6px;
+    width: 45%;
+    span {
+      color: $scoreTextColor;
+    }
+    img {
+      width: 15%;
+    }
+    h5 {
+      border: 1px solid rgb(245, 244, 244);
+      background-color: rgb(245, 244, 244);
+    }
+  }
+}
+.RPS {
+  .wrap {
+    // @include flex;
+    margin-top: 3%;
+    background-image: url(/img/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 258px;
+    img {
+      border: 8px solid;
+      background-color: honeydew;
+      border-radius: 360px;
+    }
+    .paper {
+      width: 8%;
+      margin: -5px 12% 10px 0px;
+      padding: 2vh;
+      border-color: $paperGradient;
+    }
+    .scissors {
+      width: 8%;
+      margin-bottom: 7px;
+      padding: 2vh;
+      border-color: $scissorsGradient;
+    }
+  }
+}
+#pre-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #3498;
+  text-align: center;
+  #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px dotted white;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+  }
+}
+#modal-container {
+  // display: none;
+  width: 100%;
+  height: 100%;
+  .modal {
+    padding: 5.5vh 1.5vw;
+    background-color: whitesmoke;
+    position: fixed;
+    left: 30%;
+    top: 18%;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 8px;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    h5 {
+      float: left;
+    }
+    button {
+      position: relative;
+      font-size: 18px;
+      width: 8vw;
+      height: 6vh;
+      background-color: rgb(182, 181, 181);
+      float: right;
+    }
+  }
+}
