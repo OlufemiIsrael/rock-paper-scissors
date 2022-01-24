@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Games</title>
+    <script src="/index.js"></script>
+    <link rel="stylesheet" href="/sass/main.css" />
+  </head>
+  <body>
+    <div id="pre-loader">
+      <p>WAIT A MINUTE CONTENT IS LOADING ...</p>
+      <div id="loader"></div>
+    </div>
+    <div id="modal-container">
+      <div class="modal">
+        <h5>RULES</h5>
+        <div>
+          <img src="/img/image-rules.svg" alt="image-rules" />
+        </div>
+        <button
+          type="button"
+          onclick=" document.getElementById('modal-container').style.display = 'none' "
+        >
+          cancel
+        </button>
+      </div>
+    </div>
+    <section class="step-1">
+      <div class="box-wrapper">
+        <div class="box">
+          <img src="/img/logo.svg" alt="logo" />
+          <h5>SCORE <br /><span>0</span></h5>
+        </div>
+      </div>
+      <div class="RPS">
+        <div class="wrap">
+          <img src="/img/icon-paper.svg" alt="icon-paper" class="paper" />
+          <img
+            src="/img/icon-scissors.svg"
+            alt="icon-scissors"
+            class="scissors"
+          />
+        </div>
+        <img
+          src="/img/icon-rock.svg"
+          alt="icon-rock"
+          style="
+            width: 8%;
+            border: 8px solid hsl(349, 71%, 52%);
+            background-color: honeydew;
+            border-radius: 360px;
+            padding: 2vh;
+          "
+        />
+      </div>
+    </section>
+  </body>
 </html>
